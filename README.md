@@ -30,18 +30,6 @@ instantiate. Its possible parameters are :
 @param endpoint {String} (optional) The tracker endpoint to which the client
 connects to. Defaults to 'https://trk.kissmetrics.com'
 
-#### client.request(pathname, params, [callback])
-
-Performs the given request on the KISSmetrics tracker host.
-
-@param pathname {String} The path section of the URL, that comes after the
-host and before the query, including the initial slash if present.
-
-@param params {Object}
-
-@param callback {Function} A callback of the form `function(res)`.
-The default callback logs erroneous requests to stderr.
-
 #### client.set(person, properties, [callback])
 
 Sets properties on a person without recording an event by making a request.
@@ -100,4 +88,16 @@ foo bar baz).
 be set on `person`.
 
 @param callback {Function} A function of the form `function(err)`.
+The default callback logs erroneous requests to stderr.
+
+#### client.request(pathname, params, [callback])
+
+Performs the given request on the KISSmetrics tracker host.
+
+@param pathname {String} The path section of the URL, that comes after the
+host and before the query, including the initial slash if present.
+
+@param params {Object}
+
+@param callback {Function} A callback of the form `function(res)`.
 The default callback logs erroneous requests to stderr.
