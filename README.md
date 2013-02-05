@@ -13,9 +13,6 @@ var kmClient = new Kissmetrics({ key: KM_KEY });
 kmClient.event('blah@example.com', 'signed up');
 ```
 
-For more information / documentation on how to use the methods, read the source.
-All methods are accompanied by jsDocs.
-
 ## Documentation
 
 ### KissmetricsClient(options)
