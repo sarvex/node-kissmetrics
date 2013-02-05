@@ -21,6 +21,7 @@ kmClient.event('blah@example.com', 'signed up');
  * documentation moved to readme for better accessibility
  * remove alias methods. aliases considered harmful
  * default kissmetrics endpoint uses SSL
+ * pull request was [denied](https://github.com/glesperance/node-kissmetrics/pull/3)
 
 ## Documentation
 
