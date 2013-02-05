@@ -13,6 +13,15 @@ var kmClient = new Kissmetrics({ key: KM_KEY });
 kmClient.event('blah@example.com', 'signed up');
 ```
 
+## Why the Fork?
+
+ * simpler less error-prone code
+ * ability to not console.log on error
+ * this module has tests
+ * documentation moved to readme for better accessibility
+ * remove alias methods. aliases considered harmful
+ * default kissmetrics endpoint uses SSL
+
 ## Documentation
 
 ### KissmetricsClient(options)
