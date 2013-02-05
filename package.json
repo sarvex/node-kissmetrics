@@ -1,5 +1,6 @@
 {
-  "name": "kissmetrics",
+  "name": "kissmetrics-client",
+  "version": "0.0.1",
   "description": "KISSmetrics API client",
   "keywords": [
     "kissmetrics",
@@ -10,12 +11,11 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "version": "0.0.4",
   "repository": {
     "type": "git",
-    "url": "git://github.com/glesperance/node-kissmetrics.git"
+    "url": "git://github.com/superjoe30/node-kissmetrics.git"
   },
-  "author": "Gabriel Lesperance <gabriel@wavo.me>",
+  "author": "Andrew Kelley <superjoe30@gmail.com>",
   "main": "index.js",
   "engines": {
     "node": ">= 0.4.12"
