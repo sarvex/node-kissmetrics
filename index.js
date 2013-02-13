@@ -9,17 +9,20 @@ function KissmetricsClient(options) {
   options = options || {};
   this.endpoint = options.endpoint || DEFAULT_TRACKER_ENDPOINT;
   this.key = options.key;
+  this.autoTimestamp = options.autoTimestamp == null ? false : true;
 }
 
 KissmetricsClient.prototype.request = function(pathname, params, callback) {
   callback = callback || defaultCallback;
   var request = superagent.get(this.endpoint + pathname);
   request.query(params);
-  request.query({
-    '_k': this.key,
-    '_d': 1,
-    '_t': params._t || Date.now(),
-  });
+  request.query({ '_k': this.key });
+  if (this.autoTimestamp) {
+    request.query({
+      '_d': 1,
+      '_t': params._t || Date.now(),
+    });
+  }
   request.end(function (err, resp) {
     if (err) {
       callback(err);
