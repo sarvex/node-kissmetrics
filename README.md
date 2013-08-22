@@ -56,7 +56,7 @@ foo bar baz).
 + **properties** *Object* An object containing the properties to be set on
 `person`.
 
-+ **callback** *Function* A function of the form `function(err)`.
++ **callback** *Function* (optional) A function of the form `function(err)`.
 The default callback logs erroneous requests to stderr.
 
 ---
@@ -81,7 +81,7 @@ foo bar baz).
 
 Can either be a *String* or an array of *String* if multiple alias are supplied.
 
-+ **callback** *Function* A function of the form `function(err)`.
++ **callback** *Function* (optional) A function of the form `function(err)`.
 The default callback logs erroneous requests to stderr.
 
 ---
@@ -108,7 +108,7 @@ foo bar baz).
 + **properties** *Object* (optional) An object containing the properties to
 be set on `person`.
 
-+ **callback** *Function* A function of the form `function(err)`.
++ **callback** *Function* (optional) A function of the form `function(err)`.
 The default callback logs erroneous requests to stderr.
 
 ---
@@ -124,5 +124,5 @@ host and before the query, including the initial slash if present.
 
 + **params** *Object*
 
-+ **callback** *Function* A function of the form `function(err)`.
++ **callback** *Function* (optional) A function of the form `function(err)`.
 The default callback logs erroneous requests to stderr.
